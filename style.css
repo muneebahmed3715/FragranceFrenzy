@@ -1,0 +1,311 @@
+/* General reset styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Enables smooth scrolling across the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Styles the delivery banner section */
+.delivery {
+    background-color: #333;
+    color: #fff;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+/* Styles the heading section */
+.heading {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+}
+
+/* Styles the title inside the heading section */
+.title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/* Styles the title link in the heading section */
+.title h1 a {
+    margin: 0;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Styles the search bar container */
+.search-bar {
+    margin-left: 20px;
+}
+
+/* Styles the account icon */
+.account {
+    color: white;
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+/* Adds hover effect to the account icon */
+.account:hover {
+    transform: scale(1.2);
+    color: #4CAF50;
+    filter: brightness(1.2);
+}
+
+/* Adds click effect (rotation) to the account icon */
+.account:active {
+    transform: rotate(360deg);
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Styles the search bar */
+#search {
+    border-radius: 20px;
+    width: 250px;
+    height: 35px;
+    border: 1px solid #fff;
+    padding: 5px 15px;
+    font-size: 16px;
+    transition: width 0.4s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+/* Expands search bar width on focus */
+#search:focus {
+    width: 300px;
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Expands search bar width on hover */
+#search:hover {
+    width: 300px;
+    border-color: #4CAF50;
+}
+
+/* Resets search bar width when not focused or hovered */
+#search:not(:focus):not(:hover) {
+    width: 250px;
+    border-color: #fff;
+}
+
+/* Styles the navigation bar */
+.navbar {
+    background-color: #333;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles the links in the navigation bar */
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+/* Changes navbar link color on hover */
+.navbar a:hover {
+    color: #4CAF50;
+}
+
+/* Styles the background image */
+.backgroundimage {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    background-position: center;
+}
+
+/* Styles the product sections: bestsellers, new arrivals, and weekly deals */
+.bestsellers,
+.newarrivals,
+.weaklydeals {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Styles the section titles */
+.bestsellers h2,
+.newarrivals h2,
+.weaklydeals h2 {
+    font-size: 2.2em;
+    color: #333;
+    padding-bottom: 20px;
+}
+
+/* Styles the product image containers */
+.bestseller-images,
+.arrival-images,
+.weakly-deals-images {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Styles individual product containers */
+.product {
+    text-align: center;
+    width: 220px;
+    margin: 0 10px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Styles the product images */
+.product img {
+    width: 100%;
+    height: auto;
+    max-width: 220px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Adds hover effect to product images */
+.product img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles the product names */
+.product-name {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #444;
+}
+
+/* Styles the product prices */
+.product-price {
+    font-size: 1em;
+    color: #777;
+}
+
+/* Styles the information section */
+.information {
+    background-color: #f4f4f4;
+    padding: 40px;
+    color: #333;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styles the heading in the information section */
+.information h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Styles the paragraph text in the information section */
+.information p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Styles the modal container */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Styles the content inside the modal */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 85%;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out, scaleUp 0.5s ease-in-out;
+    transform-origin: center center;
+}
+
+/* Keyframe animation for fading in */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Keyframe animation for scaling up */
+@keyframes scaleUp {
+    0% { transform: scale(0.95); }
+    100% { transform: scale(1); }
+}
+
+/* Styles the close button in the modal */
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+}
+
+/* Hover and focus effects for the close button */
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Styles the "Buy Now" button */
+#buyNowBtn {
+    background-color: rgb(164, 63, 63);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Changes "Buy Now" button background on hover */
+#buyNowBtn:hover {
+    background-color: red;
+}
+
+/* Styles the "Add to Cart" button */
+#Addtocart {
+    background-color: rgb(41, 131, 41);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Changes "Add to Cart" button background on hover */
+#Addtocart:hover {
+    background-color: rgb(5, 161, 5);
+}

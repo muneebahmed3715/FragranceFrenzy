@@ -1,0 +1,186 @@
+/* General reset for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Delivery banner styling */
+.delivery {
+    background-color: #333;
+    color: #fff;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+/* Heading section styling */
+.heading {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+}
+
+/* Title styling in the heading section */
+.title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/* Title link styling */
+.title h1 a {
+    margin: 0;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Search bar container styling */
+.search-bar {
+    margin-left: 20px;
+}
+
+/* Search input field styling */
+#search {
+    border-radius: 20px;
+    width: 250px;
+    height: 35px;
+    border: 1px solid #fff;
+    padding: 5px 15px;
+    font-size: 16px;
+    transition: width 0.4s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+/* Search input field focus effect */
+#search:focus {
+    width: 300px;
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Search input field hover effect */
+#search:hover {
+    width: 300px;
+    border-color: #4CAF50;
+}
+
+/* Search input field default size when not focused or hovered */
+#search:not(:focus):not(:hover) {
+    width: 250px;
+    border-color: #fff;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #333;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar link styling */
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+/* Navbar link hover effect */
+.navbar a:hover {
+    color: #4CAF50;
+}
+
+/* Account icon styling */
+.account {
+    color: white;
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+/* Account icon hover effect */
+.account:hover {
+    transform: scale(1.2);
+    color: #4CAF50;
+    filter: brightness(1.2);
+}
+
+/* Account icon active effect */
+.account:active {
+    transform: rotate(360deg);
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Login section container styling */
+.login {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Heading in the login section */
+.login h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Subheadings in the login section */
+.login h3 {
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+/* Input field styling in the login section */
+.login input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit button styling in the login section */
+.login button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Submit button hover effect in the login section */
+.login button:hover {
+    background-color: #0056b3;
+}
+
+/* Links styling in the login section */
+.login p {
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+
+/* Link text styling in the login section */
+.login p a {
+    text-decoration: none;
+}

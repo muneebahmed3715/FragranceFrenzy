@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Information for the Document -->
+    <meta charset="UTF-8"> <!-- Character encoding for the page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- For responsiveness on mobile devices -->
+    <title>Fragrance Frenzy</title> <!-- The title of the page -->
+    <link rel="stylesheet" href="style.css"> <!-- Linking the external CSS file for styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Font Awesome for icons -->
+</head>
+
+<body>
+    <div class="container">
+        <!-- Free Delivery Banner Section -->
+        <div class="delivery">
+            <h4><b>Free Delivery In All Pakistan!</b></h4> <!-- Banner message for free delivery -->
+        </div>
+        <hr>
+
+        <!-- Header Section: Includes Search Bar, Title, and Account Icon -->
+        <div class="heading">
+            <div class="search-bar">
+                <input type="search" id="search" placeholder="Search..."> <!-- Search input field -->
+            </div>
+            <div class="title">
+                <h1><b><a href="index.html">Fragrance Frenzy</a></b></h1>
+                <!-- Website title with a link to the homepage -->
+            </div>
+            <a class="account" target="_blank" href="signup.html"><i class="fas fa-user"></i></a>
+            <!-- Link to sign-up page with user icon -->
+        </div>
+        <hr>
+
+        <!-- Navigation Bar Section -->
+        <div class="navbar">
+            <a href="#bestsellers">OUR BEST SELLERS</a> <!-- Link to Best Sellers Section -->
+            <a href="#newarrivals">NEW ARRIVALS</a> <!-- Link to New Arrivals Section -->
+            <a href="#weaklydeals">WEEKLY DEALS</a> <!-- Link to Weekly Deals Section -->
+            <a target="_blank" href="contact.html">CONTACT US</a> <!-- Link to Contact Page -->
+        </div>
+
+        <!-- Background Image Section -->
+        <img class="backgroundimage" src="blue-perfume-bottle-surrounded-by-fresh-citrus-herbs-wet-surface.jpg"
+            alt="Background Image"> <!-- Background image to create a visual theme -->
+
+        <!-- Bestsellers Section -->
+        <div class="bestsellers">
+            <h2><a id="bestsellers">OUR BEST SELLERS</a></h2> <!-- Heading for Best Sellers -->
+            <div class="bestseller-images">
+                <!-- Product List - Each product is clickable to open the modal -->
+                <div class="product"
+                    onclick="openModal('Citrus Blossom', 'PKR 1,999', 'A fresh, zesty fragrance with hints of citrus fruits and floral undertones.', '⭐⭐⭐⭐', 'High', '100g', '30-day return policy', 'Buy Now','Add to cart')">
+                    <img src="freepik__upload__86369.jpeg" alt="Product 1"> <!-- Product Image -->
+                    <p class="product-name">Citrus Blossom</p> <!-- Product Name -->
+                    <p class="product-price">PKR 1,999</p> <!-- Product Price -->
+                </div>
+                <div class="product"
+                    onclick="openModal('Mystic Woods', 'PKR 2,499', 'A deep, woody scent with smoky undertones, ideal for evening wear.', '⭐⭐⭐⭐⭐', 'Excellent', '120g', 'No return', 'Buy Now','Add to cart')">
+                    <img src="freepik__upload__2619.jpeg" alt="Product 2">
+                    <p class="product-name">Mystic Woods</p>
+                    <p class="product-price">PKR 2,499</p>
+                </div>
+                <div class="product"
+                    onclick="openModal('Amber Elegance', 'PKR 1,799', 'A rich amber fragrance with hints of vanilla and sandalwood.', '⭐⭐⭐⭐', 'Good', '150g', '15-day return policy', 'Buy Now','Add to cart')">
+                    <img src="freepik__upload__7632.jpeg" alt="Product 3">
+                    <p class="product-name">Amber Elegance</p>
+                    <p class="product-price">PKR 1,799</p>
+                </div>
+                <div class="product"
+                    onclick="openModal('Velvet Rose', 'PKR 2,299', 'A luxurious rose scent with a velvet touch, perfect for special occasions.', '⭐⭐⭐⭐⭐', 'Premium', '130g', '30-day return policy', 'Buy Now','Add to cart')">
+                    <img src="freepik__upload__87761.jpeg" alt="Product 4">
+                    <p class="product-name">Velvet Rose</p>
+                    <p class="product-price">PKR 2,299</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Arrivals Section -->
+        <div class="newarrivals">
+            <h2><a id="newarrivals">NEW ARRIVALS</a></h2> <!-- Heading for New Arrivals -->
+            <div class="arrival-images">
+                <!-- List of New Arrival Products -->
+                <div class="product"
+                    onclick="openModal('Ocean Breeze', 'PKR 2,099', 'A fresh, oceanic fragrance with salty, sea breeze notes.', '⭐⭐⭐⭐', 'High', '100g', '30-day return policy', 'Buy Now','Add to cart')">
+                    <img src="freepik__upload__16195.jpeg" alt="New Arrival 1">
+                    <p class="product-name">Ocean Breeze</p>
+                    <p class="product-price">PKR 2,099</p>
+                </div>
+                <div class="product"
+                    onclick="openModal('Forest Mist', 'PKR 2,399', 'A calming fragrance that combines pine and eucalyptus.', '⭐⭐⭐⭐', 'Good', '120g', 'No return', 'Buy Now','Add to cart')">
+                    <img src="freepik__upload__91999.jpeg" alt="New Arrival 2">
+                    <p class="product-name">Forest Mist</p>
+                    <p class="product-price">PKR 2,399</p>
+                </div>
+                <div class="product"
+                    onclick="openModal('Golden Dawn', 'PKR 1,899', 'A bright, floral fragrance with golden citrus notes.', '⭐⭐⭐⭐', 'Excellent', '130g', '15-day return policy', 'Buy Now','Add to cart')">
+                    <img src="freepik__upload__88354.jpeg" alt="New Arrival 3">
+                    <p class="product-name">Golden Dawn</p>
+                    <p class="product-price">PKR 1,899</p>
+                </div>
+                <div class="product"
+                    onclick="openModal('Midnight Bloom', 'PKR 2,599', 'A mysterious fragrance with deep floral and berry undertones.', '⭐⭐⭐⭐⭐', 'Premium', '150g', '30-day return policy', 'Buy Now','Add to cart')">
+                    <img src="freepik__upload__51370.jpeg" alt="New Arrival 4">
+                    <p class="product-name">Midnight Bloom</p>
+                    <p class="product-price">PKR 2,599</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weekly Deals Section -->
+        <div class="weaklydeals">
+            <h2><a id="weaklydeals">WEEKLY DEALS</a></h2> <!-- Heading for Weekly Deals -->
+            <div class="weakly-deals-images">
+                <!-- Products with Discounts -->
+                <div class="product"
+                    onclick="openModal('Sunny Garden', 'PKR 4,000', 'A refreshing, sunny fragrance perfect for daytime wear.', '⭐⭐⭐⭐', 'High', '120g', 'No return', 'Buy Now','Add to cart')">
+                    <img src="perfume1.jpeg" alt="Deal 1">
+                    <p class="product-name">Sunny Garden</p>
+                    <strike>
+                        <p class="product-price">PKR 4,500</p> <!-- Original Price -->
+                    </strike> PKR 4,000 <!-- Discounted Price -->
+                </div>
+                <div class="product"
+                    onclick="openModal('Wildwood Essence', 'PKR 4,100', 'A robust fragrance with earthy and spicy notes.', '⭐⭐⭐⭐', 'Excellent', '150g', '30-day return policy', 'Buy Now','Add to cart')">
+                    <img src="Bold Masculine Perfume Bottle Display - Male Perfume Product hotography Ideas.jpeg"
+                        alt="Deal 2">
+                    <p class="product-name">Wildwood Essence</p>
+                    <strike>
+                        <p class="product-price">PKR 4,500</p>
+                    </strike> PKR 4,100
+                </div>
+                <div class="product"
+                    onclick="openModal('Floral Touch', 'PKR 1,500', 'A sweet, floral scent with hints of rose and jasmine.', '⭐⭐⭐⭐⭐', 'Premium', '100g', 'No return', 'Buy Now','Add to cart')">
+                    <img src="Aesthetics photo content visual perfume.jpeg" alt="Deal 3">
+                    <p class="product-name">Floral Touch</p>
+                    <strike>
+                        <p class="product-price">PKR 1,899</p>
+                    </strike> PKR 1,500
+                </div>
+                <div class="product"
+                    onclick="openModal('Rose Bouquet', 'PKR 2,100', 'A romantic, rose-based fragrance with a soft, floral bouquet.', '⭐⭐⭐⭐', 'Good', '120g', '15-day return policy', 'Buy Now','Add to cart')">
+                    <img src="ef3bd240-de50-4c8c-b096-87a44fd416f9.jpeg" alt="Deal 4">
+                    <p class="product-name">Rose Bouquet</p>
+                    <strike>
+                        <p class="product-price">PKR 2,399</p>
+                    </strike> PKR 2,100
+                </div>
+            </div>
+        </div>
+
+        <!-- Informational Section with Branding and Contact Info -->
+        <div class="information">
+            <h3><b>Discover the Perfect Scent with Fragrance Frenzy</b></h3> <!-- Section title -->
+            <p>Indulge in our exclusive collection of luxurious perfumes at Fragrance Frenzy, where every scent tells a
+                unique story. Whether you're searching for a timeless classic or a bold, modern fragrance, we have the
+                perfect perfume to express your individuality and elevate your presence.</p> <!-- Description -->
+
+            <h3><b>Stay in Touch</b></h3>
+            <p>Sign up for our newsletter to receive exclusive offers, expert fragrance tips, and early access to our
+                newest arrivals. Don’t miss out on our limited-edition releases and special promotions!</p>
+            <!-- Newsletter signup info -->
+
+            <h3><b>Shop With Confidence</b></h3>
+            <p>Enjoy free shipping on orders over [X amount], easy returns, and secure payment options at Fragrance
+                Frenzy. We’re committed to providing you with a seamless shopping experience and helping you find the
+                perfect scent that complements your style.</p> <!-- Shopping confidence section -->
+
+            <h3><b>Follow Us</b></h3>
+            <p>Join the Fragrance Frenzy community on social media to stay updated on the latest trends, scent
+                inspirations, and exclusive behind-the-scenes content. Follow us and be part of the fragrance
+                revolution!</p> <!-- Social media follow information -->
+
+            <h3><b>Contact Us</b></h3>
+            <p>Have any questions or need assistance? Our friendly customer support team is ready to help. Reach out to
+                us at [email/phone] for any inquiries or help finding your signature fragrance.</p>
+            <!-- Contact details -->
+        </div>
+
+        <!-- Product Modal for viewing detailed product information -->
+        <div id="productModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span> <!-- Close button -->
+                <h2 id="productName"></h2>
+                <p id="productPrice"></p>
+                <p id="productDescription"></p>
+                <p><strong>Reviews:</strong> <span id="productReviews"></span></p>
+                <p><strong>Quality:</strong> <span id="productQuality"></span></p>
+                <p><strong>Weight:</strong> <span id="productWeight"></span></p>
+                <p><strong>Return Warranty:</strong> <span id="productReturnWarranty"></span></p>
+                <button id="buyNowBtn">Buy Now</button>
+                <button id="Addtocart">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
