@@ -54,4 +54,4 @@ Static fragrance storefront showcasing best sellers, new arrivals, weekly deals,
 - Hook login/signup/contact forms to a backend API.
 - Replace inline `onclick` handlers with delegated event listeners in `script.js`.
 - Make product data JSON-driven to avoid repetition.
-- Improve responsiveness for small screens (nav stacking, image scaling).
+- Improve responsiveness for small screens (nav stacking, image scaling)..
